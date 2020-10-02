@@ -3,7 +3,7 @@ import React from "react";
 import { NumberInput } from "./NumberInput";
 
 export default {
-  title: "Example/NumberInput",
+  title: "ShoppingCart/Atoms/NumberInput",
   component: NumberInput,
 };
 

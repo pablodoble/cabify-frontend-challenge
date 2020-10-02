@@ -4,7 +4,7 @@ import React from "react";
 import { Thumbnail } from "./Thumbnail";
 
 export default {
-  title: "Example/Thumbnail",
+  title: "ShoppingCart/Atoms/Thumbnail",
   component: Thumbnail,
 };
 

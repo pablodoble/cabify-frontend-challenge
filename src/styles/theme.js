@@ -1,12 +1,13 @@
 export const theme = {
   fontSizes: {
-    s: "0.7em",
-    m: "1em",
-    l: "1.5em",
+    s: "0.5em",
+    m: "0.8em",
+    l: "1.3em",
+    xl: "1.5em"
   },
   colors: {
     neutral: "black",
-    lightNeutral: "lightgrey",
+    lightNeutral: "#cccccc",
     invertedNeutral: "white",
     primary: "#7350ff",
   },

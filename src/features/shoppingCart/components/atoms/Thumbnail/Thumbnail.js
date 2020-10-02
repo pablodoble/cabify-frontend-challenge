@@ -11,6 +11,8 @@ const AdaptedImg = styled.img`
 `;
 
 export const Thumbnail = (props) => {
-  const { src, alt = "thumbnail" } = props;
-  return <AdaptedImg data-testid="thumbnail" alt={alt} src={src} />;
+  const { src, alt = "thumbnail", onClick = () => {} } = props;
+  return (
+    <AdaptedImg data-testid="thumbnail" alt={alt} src={src} onClick={onClick} />
+  );
 };

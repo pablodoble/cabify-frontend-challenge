@@ -3,7 +3,7 @@ import React from "react";
 import { Label } from "./Label";
 
 export default {
-  title: "Example/Label",
+  title: "ShoppingCart/Atoms/Label",
   component: Label,
 };
 
