@@ -5,7 +5,7 @@ import { theme } from "../../../../../styles/theme";
 const { colors } = theme;
 
 const DividerContainer = styled.div`
-  padding: 15px 10px;
+  padding: 20px 0;
 `;
 
 const DividerContent = styled.div`

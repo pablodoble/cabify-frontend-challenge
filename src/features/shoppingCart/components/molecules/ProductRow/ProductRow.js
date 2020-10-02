@@ -7,6 +7,7 @@ import { ProductCounter } from "../ProductCounter/ProductCounter";
 const ProductRowContainer = styled.div`
   display: grid;
   grid-template-columns: 10% 30% 20% 20% 20%;
+  padding: 15px 0;
 `;
 
 const ProductRowColumn = styled.div`
@@ -16,6 +17,7 @@ const ProductRowColumn = styled.div`
 const Aligner = styled.div`
   display: flex;
   align-items: center;
+  justify-content: ${({ justifyContent = "start" }) => justifyContent};
   height: 100%;
 `;
 
@@ -36,7 +38,7 @@ export const ProductRow = (props) => {
   } = props;
 
   return (
-    <ProductRowContainer>
+    <ProductRowContainer data-testid={`${code}-row`}>
       <ProductRowColumn colNumber={1}>
         <Aligner>
           <Thumbnail src={imageUrl} alt={name} onClick={onImageClick} />
@@ -57,19 +59,19 @@ export const ProductRow = (props) => {
         </Aligner>
       </ProductRowColumn>
       <ProductRowColumn colNumber={3}>
-        <Aligner>
+        <Aligner justifyContent="center">
           <ProductCounter value={counter} onChange={onCounterChange} />
         </Aligner>
       </ProductRowColumn>
       <ProductRowColumn colNumber={4}>
-        <Aligner>
+        <Aligner justifyContent="center">
           <Label bold size="l">
             {price} €
           </Label>
         </Aligner>
       </ProductRowColumn>
       <ProductRowColumn colNumber={5}>
-        <Aligner>
+        <Aligner justifyContent="flex-end">
           <Label bold size="l">
             {total} €
           </Label>
