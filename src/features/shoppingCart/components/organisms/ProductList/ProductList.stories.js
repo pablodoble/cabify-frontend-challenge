@@ -50,5 +50,6 @@ const Template = (args) => {
     </div>
   );
 };
-export const CounterWithButtons = Template.bind({});
-CounterWithButtons.args = {};
+
+export const ProductListExample = Template.bind({});
+ProductListExample.args = {};

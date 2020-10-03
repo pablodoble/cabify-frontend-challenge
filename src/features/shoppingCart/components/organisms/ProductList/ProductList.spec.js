@@ -44,12 +44,16 @@ describe("ProductList", () => {
     setupComponent();
   });
 
+  it("renders a header which says Shopping Cart", () => {
+    expect(screen.getByText("Shopping cart")).toBeInTheDocument();
+  });
+
   it("renders a header containing PRODUCT DETAILS, QUANTITY, PRICE and TOTAL columns", () => {
     expect(screen.getByText("PRODUCT DETAILS")).toBeInTheDocument();
     expect(screen.getByText("QUANTITY")).toBeInTheDocument();
     expect(screen.getByText("PRICE")).toBeInTheDocument();
     expect(screen.getByText("TOTAL")).toBeInTheDocument();
-  })
+  });
 
   it("renders a ProductRow for each product on the list", () => {
     expect(screen.getByTestId("FOO-row")).toBeInTheDocument();

@@ -48,7 +48,7 @@ export const ProductRow = (props) => {
         <Aligner>
           <LabelsContainer>
             <div>
-              <Label bold size="l" color="primary">
+              <Label bold size="xl" color="primary">
                 {name}
               </Label>
             </div>
@@ -65,14 +65,14 @@ export const ProductRow = (props) => {
       </ProductRowColumn>
       <ProductRowColumn colNumber={4}>
         <Aligner justifyContent="center">
-          <Label bold size="l">
+          <Label bold size="xl">
             {price} €
           </Label>
         </Aligner>
       </ProductRowColumn>
       <ProductRowColumn colNumber={5}>
         <Aligner justifyContent="flex-end">
-          <Label bold size="l">
+          <Label bold size="xl">
             {total} €
           </Label>
         </Aligner>
