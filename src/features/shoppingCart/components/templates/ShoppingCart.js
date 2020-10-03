@@ -31,14 +31,18 @@ export const ShoppingCart = (props) => {
   } = props;
   return (
     <ShoppingCartGrid>
-      <ShoppingCartColumn colNumber={1}>
+      <ShoppingCartColumn colNumber={1} data-testid="shopping-cart-col-1">
         <ProductList
           products={products}
           onProductCounterChange={onProductCounterChange}
           onProductImageClick={onProductImageClick}
         />
       </ShoppingCartColumn>
-      <ShoppingCartColumn colNumber={2} backgroundColor="lightNeutral">
+      <ShoppingCartColumn
+        colNumber={2}
+        backgroundColor="lightNeutral"
+        data-testid="shopping-cart-col-2"
+      >
         <OrderSummary
           totalCost={totalCost}
           totalCostWithoutDiscount={totalCostWithoutDiscount}

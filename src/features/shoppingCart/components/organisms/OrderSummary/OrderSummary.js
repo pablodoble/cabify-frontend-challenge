@@ -41,7 +41,7 @@ export const OrderSummary = (props) => {
   } = props;
 
   return (
-    <OrderSummaryContainer>
+    <OrderSummaryContainer data-testid="order-summary">
       <div>
         <div>
           <Label bold size="xxl">

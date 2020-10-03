@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen, cleanup, within } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
 import { OrderSummary } from "./OrderSummary";
 
 describe("OrderSummary", () => {
