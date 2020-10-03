@@ -14,7 +14,7 @@ const ShoppingCartGrid = styled.div`
 
 const ShoppingCartColumn = styled.div`
   grid-column-start: ${({ colNumber }) => colNumber};
-  padding: 20px;
+  padding: 40px;
   background-color: ${({ backgroundColor = "neutral" }) =>
     backgroundColors[backgroundColor]};
 `;

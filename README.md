@@ -17,6 +17,7 @@
 - Using [react-theme-provider](https://github.com/callstack/react-theme-provider) or similar to inject the `theme` object instead of importing it direclty
 - Using [react-app-rewired](https://github.com/timarney/react-app-rewired) to avoid using annoying relative urls on imports ("../../../../")
 - Using [redux-saga](https://redux-saga.js.org/) to implement asynchronous behaviour when needed.
+- Responsive design
 
 ## Available Scripts
 

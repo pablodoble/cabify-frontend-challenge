@@ -61,7 +61,7 @@ export const OrderSummary = (props) => {
           <PriceRow
             key={discount.description}
             description={discount.description}
-            value={discount.value}
+            value={`-${discount.value}`}
           />
         ))}
       </div>

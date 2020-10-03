@@ -7,24 +7,14 @@ import reducer, {
 
 describe("shoppingCartSlice", () => {
   describe("reducer", () => {
-    describe("addProduct action", () => {
+    describe("setProductCounter action", () => {
       it("should add 1 to the counter of the specified product", () => {
         const action = {
-          type: shoppingCartSlice.actions.addProduct.type,
-          payload: { productCode: "TSHIRT" },
+          type: shoppingCartSlice.actions.setProductCounter.type,
+          payload: { productCode: "TSHIRT", counter: 3 },
         };
         const resultState = reducer(initialState, action);
-        expect(resultState.TSHIRT).toEqual(1);
-      });
-    });
-    describe("removeProduct action", () => {
-      it("should subtract 1 to the counter of the specified product", () => {
-        const action = {
-          type: shoppingCartSlice.actions.removeProduct.type,
-          payload: { productCode: "TSHIRT" },
-        };
-        const resultState = reducer({ ...initialState, TSHIRT: 1 }, action);
-        expect(resultState.TSHIRT).toEqual(0);
+        expect(resultState.TSHIRT).toEqual(3);
       });
     });
   });

@@ -59,11 +59,11 @@ ShoppingCartExample.args = {
   discounts: [
     {
       description: "2x1 Mug offer",
-      value: -10,
+      value: 10,
     },
     {
       description: "x3 Shirt offer",
-      value: -3,
+      value: 3,
     },
   ],
 };

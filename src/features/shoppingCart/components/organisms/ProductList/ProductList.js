@@ -51,7 +51,7 @@ export const ProductList = (props) => {
   return (
     <div data-testid="product-list">
       <div>
-        <Label bold size="xl">
+        <Label bold size="xxl">
           Shopping cart
         </Label>
       </div>

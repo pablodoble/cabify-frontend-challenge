@@ -14,18 +14,16 @@ export const shoppingCartSlice = createSlice({
   name: "shoppingCart",
   initialState,
   reducers: {
-    addProduct: (state, action) => {
-      const { productCode } = action.payload;
-      state[productCode]++;
-    },
-    removeProduct: (state, action) => {
-      const { productCode } = action.payload;
-      state[productCode]--;
+    setProductCounter: (state, action) => {
+      const { productCode, counter } = action.payload;
+      state[productCode] = counter;
     },
   },
 });
 
 // SELECTORS
+export const selectShoppingCartState = (state) => state.shoppingCart;
+
 export const selectProductCounter = (productCode) => (state) =>
   state.shoppingCart[productCode];
 

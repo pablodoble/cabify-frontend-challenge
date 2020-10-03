@@ -6,7 +6,7 @@ const { colors } = theme;
 
 const AdaptedImg = styled.img`
   height: 100%;
-  border: 2px solid ${colors.lightNeutral};
+  border: 1px solid ${colors.lightNeutral};
   border-radius: 5px;
 `;
 
