@@ -6,7 +6,7 @@ import { ProductCounter } from "../ProductCounter/ProductCounter";
 
 const ProductRowContainer = styled.div`
   display: grid;
-  grid-template-columns: 10% 30% 20% 20% 20%;
+  grid-template-columns: min-content 30% 20% 20% 20%;
   padding: 15px 0;
 `;
 
@@ -22,7 +22,7 @@ const Aligner = styled.div`
 `;
 
 const LabelsContainer = styled.div`
-  padding-left: 10px;
+  padding-left: 15px;
 `;
 
 export const ProductRow = (props) => {
