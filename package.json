@@ -53,7 +53,8 @@
       "!<rootDir>/node_modules/",
       "!src/**/*.stories.{js,jsx}",
       "!src/index.js",
-      "!src/serviceWorker.js"
+      "!src/serviceWorker.js",
+      "!src/app/store.js"
     ]
   }
 }
