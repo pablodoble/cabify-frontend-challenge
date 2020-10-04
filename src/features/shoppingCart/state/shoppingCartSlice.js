@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import products from "../../../app/products";
+import products from "../descriptors/products";
 
 export const initialState = Object.keys(products).reduce(
   (acc, productCode) => ({

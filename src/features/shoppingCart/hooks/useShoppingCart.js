@@ -5,8 +5,8 @@ import {
   shoppingCartSlice,
 } from "../state/shoppingCartSlice";
 import { Checkout } from "../logic/Checkout";
-import productDescriptors from "../../../app/products";
-import { discounts as discountDescriptors } from "../logic/discounts";
+import productDescriptors from "../descriptors/products";
+import { discounts as discountDescriptors } from "../descriptors/discounts";
 
 export const useShoppingCart = () => {
   const dispatch = useDispatch();
