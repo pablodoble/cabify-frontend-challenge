@@ -1,5 +1,9 @@
 [![Actions Status](https://github.com/pablodoble/cabify-frontend-challenge/workflows/tests/badge.svg)](https://github.com/pablodoble/cabify-frontend-challenge/actions)
 
+# Shopping cart frontend challenge
+
+In this repo you'll be able to find the code for my solution to Cabify's frontend challenge. The following sections will give you an overall view on how it's done and how to run it.
+
 ## Strucrture
 
 - Overall
