@@ -8,23 +8,29 @@ const mockProducts = {
     price: 10,
     discounts: ["50PERCENT"],
     name: "Foo",
+    description: "lorem ipsum",
     counter: 0,
     thumbnailUrl: "/assets/cap.png",
+    imageUrl: "/assets/big/cap.jpg"
   },
   BAR: {
     code: "BAR",
     price: 5,
     discounts: ["50PERCENT", "30PERCENT"],
     name: "Bar",
+    description: "lorem ipsum",
     counter: 0,
     thumbnailUrl: "/assets/cap.png",
+    imageUrl: "/assets/big/cap.jpg"
   },
   BIZ: {
     code: "BIZ",
     price: 1,
     name: "Biz",
+    description: "lorem ipsum",
     counter: 0,
     thumbnailUrl: "/assets/cap.png",
+    imageUrl: "/assets/big/cap.jpg"
   },
 };
 
