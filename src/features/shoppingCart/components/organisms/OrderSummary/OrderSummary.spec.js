@@ -10,11 +10,11 @@ describe("OrderSummary", () => {
     discounts: [
       {
         description: "2x1 Foo offer",
-        value: -10,
+        value: 10,
       },
       {
         description: "x3 Bar offer",
-        value: -3,
+        value: 3,
       },
     ],
   };

@@ -25,6 +25,18 @@ const ShoppingCartContainer = styled.div`
   width: 80%;
 `;
 
+/**
+ * This component has been extracted just for testing purposes
+ * since it's the recomended way in Storybook's docs
+ */
+export const ShoppingCartPagePure = (props) => (
+  <Background>
+    <ShoppingCartContainer>
+      <ShoppingCart {...props} />
+    </ShoppingCartContainer>
+  </Background>
+);
+
 export const ShoppingCartPage = () => {
   const dispatch = useDispatch();
   const productCounters = useSelector(selectShoppingCartState);
@@ -62,18 +74,14 @@ export const ShoppingCartPage = () => {
   };
 
   return (
-    <Background>
-      <ShoppingCartContainer>
-        <ShoppingCart
-          totalCost={totalCost}
-          totalCostWithoutDiscount={totalCostWithoutDiscount}
-          totalItems={totalItems}
-          discounts={discounts}
-          products={products}
-          onProductCounterChange={onProductCounterChange}
-          onProductImageClick={onProductImageClick}
-        />
-      </ShoppingCartContainer>
-    </Background>
+    <ShoppingCartPagePure
+      totalCost={totalCost}
+      totalCostWithoutDiscount={totalCostWithoutDiscount}
+      totalItems={totalItems}
+      discounts={discounts}
+      products={products}
+      onProductCounterChange={onProductCounterChange}
+      onProductImageClick={onProductImageClick}
+    />
   );
 };
