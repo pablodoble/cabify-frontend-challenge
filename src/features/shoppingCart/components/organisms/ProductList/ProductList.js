@@ -65,7 +65,7 @@ export const ProductList = (props) => {
           code={product.code}
           counter={product.counter}
           price={product.price}
-          total={product.price * product.counter}
+          total={product.price * (product.counter || 0)}
           onCounterChange={onProductCounterChangeFactory(product.code)}
           onImageClick={onProductImageClickFactory(product.code)}
         />

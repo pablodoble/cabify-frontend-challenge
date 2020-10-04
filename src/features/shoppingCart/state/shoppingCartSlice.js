@@ -30,7 +30,7 @@ export const selectProductCounter = (productCode) => (state) =>
 export const selectTotalProductsCounter = (state) =>
   Object.values(state.shoppingCart).reduce(
     (totalProducts, currentProductAmount) =>
-      totalProducts + currentProductAmount,
+      totalProducts + (currentProductAmount || 0),
     0
   );
 
