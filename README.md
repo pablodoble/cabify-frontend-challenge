@@ -4,7 +4,7 @@
 
 In this repo you'll find the code for my solution to Cabify's frontend challenge. The following sections will give you an overall view on how it's done and how to run it.
 
-## Strucrture
+## Structure
 
 Here you have some comments on the structure of the project divided in 3 subsections: Overall, Logic and Components.
 
@@ -24,7 +24,7 @@ Here you have some comments on the structure of the project divided in 3 subsect
   - You can find the **Checkout** class in `src/features/shoppingCart/logic`
 - To make Checkout logic a bit more scalable, a **descriptor** pattern has been applied on products and discounts data.
   - This means, **Checkout** class is _data-agnostic_. It just takes `products` and `discounts` descriptors in the constructor and uses the props inside them to run all the logic.
-  - In addition, `discounts` descriptors are _enhanced_ descriptors. Ideally, descriptors would come from a server, which means all the data inside them must be **serializable**. This means we can't get functions into them. So we have enhanced `discounts` descriptors by adding some functions (`getDescription` and `getDiscountValue`) already in the client side.
+  - In addition, `discounts` descriptors are _enhanced_ descriptors. Ideally, descriptors would come from a server, which means all the data inside them must be **serializable**. This means we can't get functions into them. So I have enhanced `discounts` descriptors by adding some functions (`getDescription` and `getDiscountValue`) already in the client side.
   - You can find the descriptors in `src/features/shoppingCart/descriptors`
 
 ### Components
