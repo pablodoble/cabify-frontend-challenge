@@ -8,6 +8,7 @@ const AdaptedImg = styled.img`
   height: 100%;
   border: 1px solid ${colors.lightNeutral};
   border-radius: 5px;
+  cursor: pointer;
 `;
 
 export const Thumbnail = (props) => {
