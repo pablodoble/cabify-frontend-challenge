@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ShoppingCart } from "../../templates/ShoppingCart";
+import { ShoppingCart } from "../../templates/ShoppingCart/ShoppingCart";
 import { useShoppingCart } from "../../../hooks/useShoppingCart";
 
 const Background = styled.div`
@@ -37,8 +37,9 @@ export const ShoppingCartPage = () => {
     discounts,
     products,
     onProductCounterChange,
-    onProductImageClick,
   } = useShoppingCart();
+
+  const onProductImageClick = () => {};
 
   return (
     <ShoppingCartPagePure

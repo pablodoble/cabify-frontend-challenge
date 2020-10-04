@@ -4,7 +4,7 @@ import { ShoppingCart } from "./ShoppingCart";
 
 describe("ShoppingCart", () => {
   const mockProps = {
-    imageUrl: "some/url",
+    thumbnailUrl: "some/url",
     name: "Foo",
     code: "bar",
     counter: 1,

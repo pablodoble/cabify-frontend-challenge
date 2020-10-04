@@ -60,7 +60,7 @@ export const ProductList = (props) => {
       {products.map((product) => (
         <ProductRow
           key={product.code}
-          imageUrl={product.imageUrl}
+          thumbnailUrl={product.thumbnailUrl}
           name={product.name}
           code={product.code}
           counter={product.counter}

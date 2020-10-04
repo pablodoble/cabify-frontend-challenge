@@ -1,8 +1,8 @@
 import React from "react";
-import { ProductList } from "../organisms/ProductList/ProductList";
-import { OrderSummary } from "../organisms/OrderSummary/OrderSummary";
 import styled from "styled-components";
-import { theme } from "../../../../styles/theme";
+import { ProductList } from "../../organisms/ProductList/ProductList";
+import { OrderSummary } from "../../organisms/OrderSummary/OrderSummary";
+import { theme } from "../../../../../styles/theme";
 
 const { backgroundColors } = theme;
 

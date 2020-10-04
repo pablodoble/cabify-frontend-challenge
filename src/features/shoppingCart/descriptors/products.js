@@ -3,21 +3,24 @@ const products = {
     code: "TSHIRT",
     name: "Cabify T-Shirt",
     price: 20.0,
-    imageUrl: "/assets/shirt.png",
+    thumbnailUrl: "/assets/shirt.png",
+    imageUrl: "/assets/big/tshirt.jpg",
     discounts: ["BULK3"],
   },
   MUG: {
     code: "MUG",
     name: "Cabify Coffee Mug",
     price: 5.0,
-    imageUrl: "/assets/mug.png",
+    thumbnailUrl: "/assets/mug.png",
+    imageUrl: "/assets/big/mug.jpg",
     discounts: ["2X1"],
   },
   CAP: {
     code: "CAP",
     name: "Cabify Cap",
     price: 10.0,
-    imageUrl: "/assets/cap.png",
+    thumbnailUrl: "/assets/cap.png",
+    imageUrl: "/assets/big/cap.jpg",
   },
 };
 

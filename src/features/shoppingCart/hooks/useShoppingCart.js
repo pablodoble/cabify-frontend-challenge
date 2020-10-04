@@ -40,10 +40,6 @@ export const useShoppingCart = () => {
     );
   };
 
-  const onProductImageClick = () => {
-    // TODO: open product detail
-  };
-
   return {
     totalItems,
     totalCost,
@@ -51,6 +47,5 @@ export const useShoppingCart = () => {
     discounts,
     products,
     onProductCounterChange,
-    onProductImageClick,
   };
 };

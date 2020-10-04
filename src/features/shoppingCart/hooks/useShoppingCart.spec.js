@@ -11,7 +11,6 @@ const UseShoppingCartExample = () => {
     discounts,
     products,
     onProductCounterChange,
-    onProductImageClick,
   } = useShoppingCart();
 
   return (
@@ -34,7 +33,7 @@ const UseShoppingCartExample = () => {
         <div>
           {products.map((product) => (
             <div key={product.code}>
-              {`Code: ${product.code}, ImageUrl: ${product.imageUrl}, Counter: ${product.counter}, Price: ${product.price}`}
+              {`Code: ${product.code}, thumbnailUrl: ${product.thumbnailUrl}, Counter: ${product.counter}, Price: ${product.price}`}
             </div>
           ))}
         </div>
@@ -42,7 +41,6 @@ const UseShoppingCartExample = () => {
       <div onClick={() => onProductCounterChange("CAP", 1)}>
         onProductCounterChange
       </div>
-      <div onClick={() => onProductImageClick()}>onProductImageClick</div>
     </div>
   );
 };
@@ -83,17 +81,17 @@ describe("useShoppingCart", () => {
     expect(screen.getByText("Products:")).toBeInTheDocument();
     expect(
       screen.getByText(
-        "Code: TSHIRT, ImageUrl: /assets/shirt.png, Counter: 3, Price: 20"
+        "Code: TSHIRT, thumbnailUrl: /assets/shirt.png, Counter: 3, Price: 20"
       )
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "Code: MUG, ImageUrl: /assets/mug.png, Counter: 4, Price: 5"
+        "Code: MUG, thumbnailUrl: /assets/mug.png, Counter: 4, Price: 5"
       )
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "Code: CAP, ImageUrl: /assets/cap.png, Counter: 4, Price: 10"
+        "Code: CAP, thumbnailUrl: /assets/cap.png, Counter: 4, Price: 10"
       )
     ).toBeInTheDocument();
   });
@@ -102,13 +100,9 @@ describe("useShoppingCart", () => {
     userEvent.click(screen.getByText("onProductCounterChange"));
 
     const capRow = await screen.getByText(
-      "Code: CAP, ImageUrl: /assets/cap.png, Counter: 4, Price: 10"
+      "Code: CAP, thumbnailUrl: /assets/cap.png, Counter: 4, Price: 10"
     );
 
     expect(capRow).toBeInTheDocument();
-  });
-
-  it("calls onProductImageClick", () => {
-    userEvent.click(screen.getByText("onProductImageClick"));
   });
 });

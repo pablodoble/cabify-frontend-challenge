@@ -27,7 +27,7 @@ const LabelsContainer = styled.div`
 
 export const ProductRow = (props) => {
   const {
-    imageUrl,
+    thumbnailUrl,
     name,
     code,
     counter,
@@ -41,7 +41,7 @@ export const ProductRow = (props) => {
     <ProductRowContainer data-testid={`${code}-row`}>
       <ProductRowColumn colNumber={1}>
         <Aligner>
-          <Thumbnail src={imageUrl} alt={name} onClick={onImageClick} />
+          <Thumbnail src={thumbnailUrl} alt={name} onClick={onImageClick} />
         </Aligner>
       </ProductRowColumn>
       <ProductRowColumn colNumber={2}>

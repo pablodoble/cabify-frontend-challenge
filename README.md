@@ -26,6 +26,7 @@ In this repo you'll be able to find the code for my solution to Cabify's fronten
 - Using [react-app-rewired](https://github.com/timarney/react-app-rewired) to avoid using annoying relative urls on imports ("../../../../")
 - Using [redux-saga](https://redux-saga.js.org/) to implement asynchronous behaviour when needed.
 - Responsive design
+- Static types (Flow, Typescript)
 
 ## Available Scripts
 

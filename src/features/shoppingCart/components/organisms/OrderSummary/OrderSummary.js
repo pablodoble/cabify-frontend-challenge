@@ -1,15 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 import { Label } from "../../atoms/Label/Label";
 import { Divider } from "../../atoms/Divider/Divider";
 import { Button } from "../../atoms/Button/Button";
-import styled from "styled-components";
-
-const PriceRowContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 0;
-`;
+import {PriceRow} from "../../molecules/PriceRow/PriceRow"
 
 const OrderSummaryContainer = styled.div`
   height: 100%;
@@ -17,20 +11,6 @@ const OrderSummaryContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `;
-
-const PriceRow = ({
-  description,
-  value,
-  descriptionSize = "l",
-  valueSize = "xl",
-}) => (
-  <PriceRowContainer data-testid={`row-${description}`}>
-    <Label size={descriptionSize}>{description}</Label>
-    <Label bold size={valueSize}>
-      {value} €
-    </Label>
-  </PriceRowContainer>
-);
 
 export const OrderSummary = (props) => {
   const {

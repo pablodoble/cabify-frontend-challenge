@@ -5,7 +5,7 @@ import { ProductRow } from "./ProductRow";
 
 describe("ProductRow", () => {
   const mockProps = {
-    imageUrl: "some/url",
+    thumbnailUrl: "some/url",
     name: "Foo",
     code: "bar",
     counter: 1,

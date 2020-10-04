@@ -24,7 +24,7 @@ const Template = (args) => {
 
 export const PrimaryButton = Template.bind({});
 PrimaryButton.args = {
-  imageUrl: "/assets/cap.png",
+  thumbnailUrl: "/assets/cap.png",
   name: "Cap",
   code: "ASDF123",
   price: 5,
