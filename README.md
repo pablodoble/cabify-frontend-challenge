@@ -11,7 +11,7 @@ Here you have some comments on the structure of the project divided in 3 subsect
 ### Overall
 
 - This project has been generated using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
-- The project follows a [features frolder structure](https://en.reactjs.org/docs/faq-structure.html)
+- The project follows a [features folder structure](https://en.reactjs.org/docs/faq-structure.html)
 - The code is unit-tested using [react-testing-library](https://testing-library.com/docs/react-testing-library/intro). You can see the code coverage report by running `yarn run test:coverage` as explained in the **Available Scripts** section
   - A `tests` badge has been enabled in this repo to check UT status.
 
